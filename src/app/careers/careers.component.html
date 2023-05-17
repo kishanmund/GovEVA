@@ -1,0 +1,49 @@
+<div class="careers">
+    <div class="cover-heading">
+        <img  src="https://www.goveva.com/wp-content/uploads/career-header.jpg" class="cover-img" alt="">
+        <h1 class="cover-text">Careers</h1>
+    </div>
+    <div class="open-positions">
+        <h2 class="open-positions-heading">
+            Open Positions
+        </h2>
+        <div class="position-search">
+            <input class="search-box" type="text" [(ngModel)]="searchInput" placeholder="Search Position" >
+            <span class="vertical-line">|</span>
+            <select class="country" name="country" [(ngModel)]="selected" id="">
+                <option value="">All</option>
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+            </select>
+            <span class="search-button" (click)="searchPosition(searchInput,selected)">
+                Search
+            </span>
+        </div>
+    </div>
+    <div class="open-position-result">
+        <table>
+            <tr>
+                <th>Job ID</th>
+                <th>Position</th>
+                <th>Location</th>
+                <th>Experience</th>
+                <th></th>
+            </tr>
+            <tr *ngFor="let row of openPositions">
+                <td>{{row.jobID}}</td>
+                <td>{{row.role}}</td>
+                <td>{{row.location}}</td>
+                <td>{{row.exp}}</td>
+                <td>
+                    <span class="apply-button" (click)="openPopup(row)">
+                        Apply
+                    </span>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div class="apply-popup" *ngIf="isVisible">
+    <app-apply-popup [popupObj]="popupObj" (closePopup)="closePopup()"></app-apply-popup>
+</div>

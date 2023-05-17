@@ -1,0 +1,34 @@
+{
+  "arr":[
+    {
+      "jobID": "001",
+      "role": "Full Stack Developer",
+      "location": "India",
+      "exp": "2",
+      "name": "Ram",
+      "email": "ram@abc.com",
+      "phone": "+91-7788996656",
+      "resume": "alex.pdf"
+    },
+    {
+      "jobID": "009",
+      "role": "Backend Developer",
+      "location": "India",
+      "exp": "2",
+      "name": "Alex",
+      "email": "alex@abc.com",
+      "phone": "+91-7788996655",
+      "resume": "alex.pdf"
+    },
+    {
+      "jobID": "004",
+      "role": "Angular Developer",
+      "location": "India",
+      "exp": "2",
+      "name": "Clark",
+      "email": "clark@abc.com",
+      "phone": "+91-7788996657",
+      "resume": "clark.pdf"
+    }
+  ] 
+}

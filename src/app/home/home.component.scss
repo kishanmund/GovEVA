@@ -1,0 +1,98 @@
+.body{
+    position: relative;
+    .banner-container{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+        .video-content{
+            z-index: 1;
+            position: absolute;
+            display: flex;
+            margin: auto;
+            width: 1000px;
+            justify-content: space-between;
+            .video-left-content{
+
+                .button-container{
+                    
+                    margin-top: 20px;
+                    margin-bottom: 35px;
+                    margin-left: 0px;
+                    color: white;
+                    font-size: 16px;
+                    font-weight: 700;
+                    font-family: "Raleway", Helvetica, Arial, sans-serif;
+                    cursor: pointer;
+                    .request{
+                        background-color: #07a7a5;
+                        padding: 10px !important;
+                        border: 1px solid #07a7a5;
+                        padding: 10px 20px !important;
+                        border-radius: 4px;
+                        margin-right: 20px;
+                    }
+
+                    .learn{
+                        padding: 10px !important;
+                        border: 1px solid white;
+                        padding: 10px 20px !important;
+                        border-radius: 4px;
+                    }
+                }
+                
+            align-self: center;
+                h1{
+                    color: white;
+                    margin: 0.67em 0;
+                    text-align: left;
+                    letter-spacing: -.01em;
+                    line-height: 41px;
+                    margin-bottom: 0px;
+                    font-family: "Raleway", Helvetica, Arial, sans-serif;
+                    font-size: 38px;
+                    line-height: 48px;
+                    font-weight: 700;
+                    font-style: normal;
+                }
+
+                h2{
+                    color:#f2a60c;
+                    font-family: "Raleway", Helvetica, Arial, sans-serif;
+                    font-size: 32px;
+                    line-height: 42px;
+                    font-weight: 700;
+                    font-style: normal;
+                }
+
+                h3{
+                    color: white; 
+                    font-family: "Raleway", Helvetica, Arial, sans-serif;
+                    font-size: 22px;
+                    line-height: 32px;
+                    font-weight: 700;
+                    font-style: normal;
+                    text-align: left;
+                    font-style: italic;
+                    margin-bottom: 0px !important;
+                }
+            }
+
+            .video-right-content{
+                .college-img{
+                    height: 540px;
+                }
+            }
+        }
+    
+        .banner-video{
+            width: 100%;
+            object-fit: cover;
+            position: relative;
+        }
+    }
+    .home-img{
+        width: 100%;
+    }
+}

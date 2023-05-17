@@ -1,0 +1,40 @@
+<div class="open-positions">
+    <img style="width: 100%;height: 250px;"  src="./../../assets/images/applied-positions.jpg" alt="">
+    <h1 class="cover-text">Applied Positions</h1>
+
+    <table>
+        <tr>
+            <th>Sl. No.</th>
+            <th *ngFor="let header of tableHeaders">{{header}}</th>
+        </tr>
+        <tr *ngFor="let row of career.appliedPositions;let i = index">
+            <td>
+                {{i+1}}
+            </td>
+            <td>
+                {{row.jobID}}
+            </td>
+            <td>
+                {{row.name}}
+            </td>
+            <td>
+                {{row.phone}}
+            </td>
+            <td>
+                {{row.email}}
+            </td>
+            <td>
+                {{row.role}}
+            </td>
+            <td>
+                {{row.exp}}
+            </td>
+            <td>
+                {{row.location}}
+            </td>
+            <td>
+                {{row.resume | fileName}}
+            </td>
+        </tr>
+    </table>
+</div>
