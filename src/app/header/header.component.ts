@@ -69,5 +69,10 @@ export class HeaderComponent implements OnInit {
     this.headerMenu[index].active = true;
   }
 
+  navigate(){
+    this.router.navigateByUrl("/applied-positions")
+    this.headerMenu[this.lastActive].active = false;
+  }
+
 
 }

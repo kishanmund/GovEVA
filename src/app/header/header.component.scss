@@ -9,8 +9,7 @@
   .header {
     display: flex;
     justify-content: space-between;
-    width: 1360px;
-    margin: auto;
+    padding: 0 100px;
 
     .logo {
       .logo-img {
@@ -79,4 +78,6 @@
   border-top-left-radius: 20px;
   border-bottom-left-radius: 10px;
   padding: 10px 10px 0px;
+  z-index: 10;
+  border: 1px solid;
 }

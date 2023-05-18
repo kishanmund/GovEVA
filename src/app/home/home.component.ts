@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
 
   getHeight() {
     const myStyles = {
-      "height": this.windowHeight +"px",
+      "height": this.windowHeight - 66 +"px",
     };
     return myStyles;
   }
