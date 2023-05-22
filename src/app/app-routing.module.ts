@@ -11,7 +11,8 @@ import { AppliedPositionsComponent } from './applied-positions/applied-positions
 
 
 const routes: Routes = [
-    { path: '', redirectTo: 'home', pathMatch: 'full' },
+  
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'home', component: HomeComponent },
     { path: 'product', component: ProductComponent },
     { path: 'team', component: TeamComponent },
@@ -19,6 +20,7 @@ const routes: Routes = [
     { path: 'careers', component: CareersComponent },
     { path: 'contact', component: ContactsComponent },
     { path: 'applied-positions', component: AppliedPositionsComponent },
+    { path: '**', redirectTo: 'home', pathMatch: 'full' },
 ];
 
 @NgModule({
